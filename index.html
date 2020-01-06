@@ -4,16 +4,30 @@
 <title>Google homepage test</title>
 <link rel="stylesheet" href="style.css">
     <style>
-    p{text-align: center; 
-    font-size: 14px;
-    background-color:white}
     a{color: black;
-    text-decoration: none;}
+    text-decoration: none;
+    hoover: underline;
+}
     ul{list-style-type: none;
     margin:0;
     padding:0;
     float:right;}
-    li{display:inline;}
+    li{display: inline;}
+    .footer{
+        bottom:0px;
+        left: 0px;
+        padding-left: 0px;
+        position: fixed;
+        display: inline;
+        width: 100%;
+        justify-content: space-between;
+        margin-left: 0px;
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;}
     #search-text-input{
         border-top: 0 #FFFFFF;
         border-right:0 #FFFFFF;
@@ -26,29 +40,11 @@
         outline:0;
         padding:2em .2em .2em .3em;
         width:400px;
-        border-radius: 10px 10px 10px 10px;
-        font-size: 14px}
-     #img-holder{
-         background-color:#9AA0A6;
-         color:#9AA0A6;
-         border-top:solid #FFFFFF;
-         padding-left:0 #9AA0A6;
-         box-shadow:5px 5px 5px 5px #FFFFFF;
-         Float:center;     
-         height:30px;
-         margin:0
-         padding:2em 0 .2em .2em #FFFFFF;
-         width: 60px;
-         display:inline;}
-         #img-holder img{
-             margin:-2px;
-             width:25px;
-             display:inline;
-             float: center}
-            
+        border-radius: 25px;
+        font-size: 14px;}
              </style>
 </head>
-<body style="text-align: center;">
+<body>
 
  <ul>
     <li><a href="Gmail.asp">Gmail</a></li>
@@ -60,42 +56,31 @@
      line-height: 40px;"><li><a href="Sign in.asp">&nbsp;   Sign in</a></li>
      </div>
     </ul>
-    </br> </br> </br> </br> </br> </br> </br> </br> </br>
-<p><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="300" height="90" alt="GOOGLE"></p>
+    </br> </br> </br> </br> </br> </br> </br> </br> </br> </br>
+<p style="text-align: center;"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" width="300" height="90" alt="GOOGLE"></p>
     <form action="somescript.php" method="POST" target="Self">
-    <div id="img-holder">
-    
-    <img src="/home/kyalisiima/Downloads/download (1).png">
-    <input type ="Search" id="search-text-input">
-    </div>
-    <p><input type="submit" name="Google search" value="Google search">                      <input type="submit" name="I'm Feeling Lucky" value="I'm Feeling Lucky"></p>
+   <p style="text-align: center;" ><input type ="Search" id="search-text-input"></p>
+    <p style="text-align: center;"><input type="submit" name="Google search" value="Google search">                    <input type="submit" name="I'm Feeling Lucky" value="I'm Feeling Lucky"></p>
     <p style="text-align:center;">Google offered in:
     <a href="luganda.com">&nbsp; luganda</a>
     <a href="Runyoro.com">&nbsp; Runyakitara</a>
     <a href="swahili.asp">&nbsp; Kiswahili</a></div></p>
-       </form>
-<div style="padding-bottom: 5px 5px; background-color:whitesmoke">
-       <ol>
-       </br> </br> </br> </br> </br> </br> </br> </br> </br> </br>
-       <div style="text-align:left; position; relative;">
-        <li><a href="Advertising.asp">Advertising</a></li>
-        <li><a href="Business.asp">&nbsp; Business</a></li>
-       <li><a href="About.asp"> &nbsp;About</a></li>
-       <li><a href="How search works.asp">&nbsp;How Search works</a></li>
+       </form> 
+       <div class="footer">
+       <p class="left">
+       <a href="gmail.com">Advertising</a>
+       <a href="gmail.com">Business</a>
+       <a href="gmail.com">About</a>
+       <a href="gmail.com">How search works</a>
+        </p>
         </div>
-        <div style="position: absolute; bottom:0; right:0; text-align:right; display:inline; line-height:5">
-            <li><a href="Privacy.mac">&nbsp; Privacy</a></li>
-            <li><a href="Terms.com">&nbsp;  Terms</a></li> 
-            <li><a href="Settings.com">&nbsp; Settings</a></li>
-            </div>
-               </ol> 
-               </div>
-           
-               
-           
-           
-    
-       
-    
-</body>
+        <div class="footer">
+        <p class="right">
+        <a href="gmail.com">Privacy</a>
+        <a href="gmail.com">Terms</a>
+        <a href="gmail.com">Settings</a>
+        </p>
+        </div>
+          
+        </body>
 </html>
